@@ -16,6 +16,7 @@ public class Datepicker {
 	{
 		driver=new ChromeDriver();
 		driver.get("https://www.trivago.com");
+		driver.manage().window().maximize();
 	}
 	
 	
@@ -24,7 +25,7 @@ public class Datepicker {
 	{
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[1]/section/div[2]/div[4]/div/div/fieldset/button[1]")).click();
 		datepickermethod("December 2023","15");
-		datepickermethod("December 2023","30");
+		//datepickermethod("December 2023","30");
 		
 	}
 
